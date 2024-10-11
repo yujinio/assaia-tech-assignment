@@ -1,0 +1,17 @@
+[project]
+name = "assaia-tech-assignment"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.1.7",
+    "numpy>=2.1.2",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "bandit>=1.7.10",
+    "pyright>=1.1.384",
+    "ruff>=0.6.9",
+]
