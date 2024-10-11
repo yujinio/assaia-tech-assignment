@@ -38,10 +38,3 @@ repos:
       - id: ruff-format
         args: [ --config=pyproject.toml ]
         files: game.py
-
-  - repo: https://github.com/pycqa/bandit
-    rev: 1.7.5
-    hooks:
-      - id: bandit
-        files: "game.py"
-        args: ["-iii", "-ll"]

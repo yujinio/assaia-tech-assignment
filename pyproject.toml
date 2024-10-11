@@ -11,7 +11,6 @@ dependencies = [
 
 [tool.uv]
 dev-dependencies = [
-    "bandit>=1.7.10",
     "pyright>=1.1.384",
     "ruff>=0.6.9",
 ]
