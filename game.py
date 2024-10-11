@@ -84,9 +84,7 @@ def has_winning_move(board: np.ndarray, piece: int) -> bool:
             if board[r][c] == piece:
                 for dr, dc in directions:
                     if all(
-                        0 <= r + i * dr < rows
-                        and 0 <= c + i * dc < columns
-                        and board[r + i * dr][c + i * dc] == piece
+                        0 <= r + i * dr < rows and 0 <= c + i * dc < columns and board[r + i * dr][c + i * dc] == piece
                         for i in range(4)
                     ):
                         return True
@@ -114,9 +112,7 @@ def play_game(rows: int, columns: int) -> None:
         try:
             col = int(input(f"Select a column (1-{columns}): ")) - 1
             if col < 0 or col >= columns:
-                raise ValueError(
-                    f"Invalid column. Please select a column between 1 and {columns}."
-                )
+                raise ValueError(f"Invalid column. Please select a column between 1 and {columns}.")
             if not is_column_valid(board, col):
                 raise ValueError("Column full. Try a different column.")
             drop_piece(board, col, turn + 1)
