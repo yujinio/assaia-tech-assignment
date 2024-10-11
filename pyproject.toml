@@ -1,7 +1,7 @@
 [project]
 name = "assaia-tech-assignment"
 version = "0.1.0"
-description = "Add your description here"
+description = "Assaia Connect 4"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
