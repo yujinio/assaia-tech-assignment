@@ -14,3 +14,22 @@ dev-dependencies = [
     "pyright>=1.1.384",
     "ruff>=0.6.9",
 ]
+
+[tool.ruff]
+fix = true
+include = ['.pyi']
+line-length = 119
+show-fixes = true
+target-version = "py312"
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = 119
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
